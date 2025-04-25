@@ -15,7 +15,7 @@ groupadd GRP_VEN
 
 echo "Usuários sendo configurados"
 
-useradd carlos  -m -s /bin/bash -p $(openssl passwd -cr
+useradd carlos  -m -s /bin/bash -p $(openssl passwd -crypt senha) -G GRP_ADM
 useradd maria  -m -s /bin/bash -p $(openssl passwd -crypt senha) -G GRP_ADM
 useradd joao  -m -s /bin/bash -p $(openssl passwd -crypt senha) -G GRP_ADM
 
